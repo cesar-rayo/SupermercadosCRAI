@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SupermercadosCrai" parallel="tests">
+	<test name="Navigation Tests">
+		<groups>
+			<run>
+				<include name="navigation" />
+			</run>
+		</groups>
+		<classes>
+			<class name="crai.automation.tests.CraiUI" />
+		</classes>
+	</test>
+	<test name="Functional Tests">
+		<groups>
+			<run>
+				<include name="products" />
+			</run>
+		</groups>
+		<classes>
+			<class name="crai.automation.tests.CraiUI" />
+		</classes>
+	</test>
+</suite>
